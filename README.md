@@ -1,5 +1,7 @@
 # LiveBoot Magisk & KernelSU & APatch Module
 
+- **[中文自叙](/中文README.md)**
+
 ## Description
 
 - A Magisk, KernelSU and APatch module that enables unix-style (verbose) boot animation for Android devices
@@ -13,7 +15,9 @@ It has been successfully tested on many Android 14, 13 and 12 based ROMs. Should
 
 ## Download
 
-[Releases](https://github.com/symbuzzer/livebootmodule/releases)
+[English Releases](https://github.com/symbuzzer/livebootmodule/releases)
+
+[Chinese Release](https://github.com/3049298988/livebootmodule/releases)
 
 ## Changelog
 
