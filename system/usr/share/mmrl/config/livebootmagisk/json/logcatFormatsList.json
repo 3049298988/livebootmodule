@@ -1,26 +1,26 @@
 [
   {
-    "name": "Brief",
+    "name": "简要格式",
     "value": "brief"
   },
   {
-    "name": "Process",
+    "name": "进程格式",
     "value": "process"
   },
   {
-    "name": "Tag",
+    "name": "标签格式",
     "value": "tag"
   },
   {
-    "name": "Thread",
+    "name": "线程格式",
     "value": "thread"
   },
   {
-    "name": "Time",
+    "name": "时间格式",
     "value": "time"
   },
   {
-    "name": "Thread time",
+    "name": "线程时间格式",
     "value": "threadtime"
   }
 ]

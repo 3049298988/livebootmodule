@@ -1,14 +1,14 @@
 [
   {
-    "name": "Default",
+    "name": "默认",
     "value": " "
   },
   {
-    "name": "Transparent",
+    "name": "透明",
     "value": "transparent"
   },
   {
-    "name": "Dark",
+    "name": "深色",
     "value": "dark"
   }
 ]

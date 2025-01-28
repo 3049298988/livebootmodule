@@ -1,22 +1,22 @@
 [
   {
-    "name": "Main",
+    "name": "主缓冲区",
     "value": "M"
   },
   {
-    "name": "System",
+    "name": "系统缓冲区",
     "value": "S"
   },
   {
-    "name": "Radio",
+    "name": "无线缓冲区",
     "value": "R"
   },
   {
-    "name": "Events",
+    "name": "事件缓冲区",
     "value": "E"
   },
   {
-    "name": "Crash",
+    "name": "崩溃缓冲区",
     "value": "C"
   }
 ]

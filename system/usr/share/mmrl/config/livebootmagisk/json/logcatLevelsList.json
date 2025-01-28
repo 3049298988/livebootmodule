@@ -1,30 +1,30 @@
 [
   {
-    "name": "Verbose",
+    "name": "详细",
     "value": "V"
   },
   {
-    "name": "Debug",
+    "name": "调试",
     "value": "D"
   },
   {
-    "name": "Info",
+    "name": "信息",
     "value": "I"
   },
   {
-    "name": "Warning",
+    "name": "警告",
     "value": "W"
   },
   {
-    "name": "Error",
+    "name": "错误",
     "value": "E"
   },
   {
-    "name": "Fatal",
+    "name": "严重错误",
     "value": "F"
   },
   {
-    "name": "Silent",
+    "name": "静默",
     "value": "S"
   }
 ]
