@@ -102,15 +102,15 @@ const App = () => {
       <Button
         onClick={() => {
           confirm({
-            title: "Save service script?",
+            title: "保存服务脚本？",
             description: (
               <>
-                Are you sure that you want to save the current configured service script? By pressing "Yes" the current script will be overwritten in{" "}
-                <pre style={{ display: "inline" }}>/data/adb/service.d</pre> and <pre style={{ display: "inline" }}>/data/adb/post-fs-data.d</pre>.
+                您确定要保存当前配置的服务脚本吗？如果按“是”，当前脚本将被覆盖在{" "}
+                <pre style={{ display: "grid" }}>/data/adb/service.d</pre><pre style={{ display: "grid" }}>/data/adb/post-fs-data.d</pre><pre style={{ display: "grid" }}>/data/adb/modules/livebootmagisk</pre>
               </>
             ),
-            confirmationText: "Yes",
-            cancellationText: "No",
+            confirmationText: "是",
+            cancellationText: "否",
           })
             .then(() => {
               for (const filePath of serviceFiles) {
@@ -129,32 +129,33 @@ const App = () => {
         fullWidth
         sx={{ mt: 1 }}
       >
-        Save
+        保存
       </Button>
 
-      <List subheader={<ListSubheader>Logcat appearence</ListSubheader>}>
-        <ListItemSwitch conf="wordwrap" primary="Word wrap" />
-        <ListItemSwitch conf="colors" primary="Colorful logs" />
-        <ListItemSelectDialog conf="background" primary="Background" secondary={findBackground.name} items={backgroundsList} />
+      <List subheader={<ListSubheader>Logcat 外观</ListSubheader>}>
+        <ListItemSwitch conf="wordwrap" primary="自动换行" />
+        <ListItemSwitch conf="colors" primary="彩色日志" />
+        <ListItemSelectDialog conf="background" primary="背景" secondary={findBackground.name} items={backgroundsList} />
       </List>
 
       <Divider />
 
-      <List subheader={<ListSubheader>Settings</ListSubheader>}>
-        <ListItemSelectDialog conf="logcatformat" primary="Logcat format" secondary={findLogcatFormat.name} items={logcatFormatsList} />
-        <ListItemCheckboxDialog conf="logcatbuffers" primary="Logcat buffers" secondary={findLogcatBuffers.join(", ")} items={logcatBuffersList} />
-        <ListItemCheckboxDialog conf="logcatlevels" primary="Logcat levels" secondary={findLogcatLevels.join(", ")} items={logcatLevelsList} />
+      <List subheader={<ListSubheader>日志设置</ListSubheader>}>
+        <ListItemSelectDialog conf="logcatformat" primary="logcat 格式" secondary={findLogcatFormat.name} items={logcatFormatsList} />
+        <ListItemCheckboxDialog conf="logcatbuffers" primary="logcat 缓冲区" secondary={findLogcatBuffers.join(", ")} items={logcatBuffersList} />
+        <ListItemCheckboxDialog conf="logcatlevels" primary="logcat 级别" secondary={findLogcatLevels.join(", ")} items={logcatLevelsList} />
       </List>
 
       <Divider />
 
-      <List subheader={<ListSubheader>Other</ListSubheader>}>
-        <ListItemSwitch conf="save" primary="Save logs" />
-        <ListItemSwitch conf="dmesg" primary="DMESG" />
+     <List subheader={<ListSubheader>其他</ListSubheader>}>
+     <ListItemSwitch conf="save" primary="保存日志" />
+     <ListItemSwitch conf="dmesg" primary="DMESG">
+     </ListItemSwitch>
         <TextField
           sx={{ m: 1, width: "calc(100% - 16px)" }}
           type="number"
-          label="Lines"
+          label="行数"
           variant="outlined"
           value={config.lines}
           onInput={(e) => {
